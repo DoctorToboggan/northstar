@@ -1,0 +1,43 @@
+#data-headers {
+	background-color: #AAA;
+}
+
+#data-headers * {
+	background-color: #999; //DEBUG
+}
+
+#dataTable {
+	border-collapse: collapse;
+	border: #AAA 1px solid !important; //DEBUG 
+}
+
+/*
+#dataTable td:nth-child(1), #dataTable td:nth-child(6) {
+	background-color: #999; //DEBUG
+}
+
+#dataTable td:nth-child(2), #dataTable td:nth-child(7)
+{
+	background-color: #77B; //DEBUG
+}
+
+#dataTable th:nth-child(2), #dataTable th:nth-child(7)
+{
+	background-color: #995; //DEBUG	
+}
+
+#dataTable td:nth-child(3), #dataTable td:nth-child(4), #dataTable th:nth-child(3), #dataTable th:nth-child(4),
+#dataTable td:nth-child(8), #dataTable td:nth-child(9), #dataTable th:nth-child(8), #dataTable th:nth-child(9)
+{
+	background-color: #887; //DEBUG	
+}
+*/
+
+#lot * {
+	border: #CCC 1px solid !important; //DEBUG 
+	border-collapse: collapse;
+}
+
+#lot-details {
+	background-color: #999; //DEBUG
+}

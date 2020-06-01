@@ -1,0 +1,254 @@
+body {
+	background-color: #000;
+	min-height: 560px;
+	min-width: 1000px;
+}
+
+body * {
+	background: none;
+	font-family: sans-serif;
+}
+
+#data-headers {
+	position: fixed;
+	z-index: 2;
+	overflow: hidden;
+	top: 0pt;
+	left: 0px;
+	width: 700px;	
+	height: 26px;
+}
+
+	#data-headers * {
+		display: inline-block;
+		height: 26px;
+		float: left;
+	}
+	
+	#data-headers .hdr {
+		cursor: pointer;
+		text-align: center !important;
+		font-size: 105%;
+		padding-top: 2pt;
+		margin-right: 2px;
+	}
+
+	#data-headers .sorted, #data-headers .sorted_reverse {
+		font-weight: bold;
+		letter-spacing: -0.02em;
+	}
+
+	#data-headers .sorted::after {
+		content: "▼";
+		font-size: 70%;
+		vertical-align: center;
+	}
+
+	#data-headers .sorted_reverse::after {
+		content: "▲";
+		font-size: 70%;
+		vertical-align: top;
+	}
+
+
+#data-container {
+	position: absolute;
+	left: 0px;
+	top: 26px;
+	width: 700px;
+	margin-right: 300px;
+}
+
+#dataTable {
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+	margin: 0px;
+	padding: 0px;
+	font-size: 95%;
+}
+
+#dataTable * {
+	margin: 0px;
+	padding: 0px;
+}
+
+#dataTable td * {
+	vertical-align: middle;
+}
+
+#dataTable td {
+	height: 50px;
+}
+
+#dataTable img.icon32 {
+	display: inline-block;
+	max-width: 32px;
+	max-height: 48px;
+	padding-left: 4px;
+	padding-right: 4px
+}
+
+#dataTable td:nth-child(1), #dataTable td:nth-child(4) {
+	overflow: hidden;
+	letter-spacing: -0.02em;
+	word-spacing: -0.1em;
+	text-align: right;
+}
+
+#dataTable td:nth-child(1), #data-headers div:nth-child(1),
+#dataTable td:nth-child(4), #data-headers div:nth-child(4) {
+	width: 260px;	
+}
+
+/*Q, LEft, Qp, X*/
+#dataTable td:nth-child(2), #dataTable td:nth-child(3), #data-headers div:nth-child(2), #data-headers div:nth-child(3),
+#dataTable td:nth-child(5), #dataTable td:nth-child(6), #data-headers div:nth-child(5), #data-headers div:nth-child(6) {
+	text-align: center;
+	width: 40px;
+	letter-spacing: -0.01em;
+}
+
+/* ------------------------------------*/
+/* ----------- Side panel ------------ */
+/* ------------------------------------*/
+
+#rFloater {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	z-index: 3;
+	padding: 2px;
+	width: 300px;
+	height: 100%;
+	font-size: 90%;
+}
+
+#filters {
+	z-index: 3;
+}
+
+#filters * {
+	margin: 0px; 
+	padding: 0px;
+	z-index: 4;	
+	border: none;
+	outline: none;
+	height: 20px;
+}
+
+#filters>* {
+	border-bottom: #000 1px solid;
+	letter-spacing: -0.03em;
+}
+
+#filters .spacer {
+	height: 8px;
+	border: 0px none !important;
+}
+
+
+#filterGoods, #filterPrice, #filterBonuses,
+#filterInfo, #filterTrader {
+	width: 298px;
+}
+
+#filterQmin, #filterQmax, #filterLmin, #filterLmax, #filterPQmin, #filterPQmax, #filterPAMTmin, #filterPAMTmax { 
+	width: 70px;
+}
+
+#filterLmin, #filterPAMTmin {
+	margin-left: 6px;
+}
+
+#filters .button_halfwide {
+	width: 128px;
+	display: inline-block;
+	margin: 9px;
+	text-align: center;
+	height: 22px;
+	cursor: pointer;
+}
+
+#lot {
+	position: relative;
+	z-index: 5;
+	font-size: 95%;
+	margin-top: 0.3ex;
+}
+
+#lot * {
+	margin: 0px;
+	padding: 0px;
+}
+
+	#lot-details {
+		min-height: 20px;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+
+	#lot dl {
+		margin-bottom: 1ex !important;
+		list-style-type: none;
+	}
+
+	#lot dl.single {
+		margin-bottom: 0.3ex !important;
+	}	
+
+		#lot-details * {
+			line-height: 98.0%;
+		}
+	
+		#lot dl dt {
+			letter-spacing: -0.015em;
+			word-spacing: -0.075em;
+			margin-right: 0.3em;
+			font-weight: bold;
+			display: inline-block;
+			text-align: right;
+			width: 180px !important;
+			vertical-align: top;
+		}
+
+		#lot dl dd {
+			display: inline-block;
+			width: 90px !important
+		}
+	
+	#lot h1 {
+		font-size: 120%;
+	}
+
+	#lot h3 {
+		margin-top: 0.8em;
+		font-size: 90%;
+		font-weight: normal;
+	}
+
+	#lot h4 {
+		font-weight: normal;
+		font-size: 90%;
+		margin-top: -0.2em;
+		margin-bottom: -0.5em;
+	}
+
+#mapContainer {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	width: 300px;
+	height: 300px;
+	z-index: 2;
+}
+
+#mapSVG {
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+	
+	#mapSVG .SVGmarker {
+		stroke-width:2.9;
+	}

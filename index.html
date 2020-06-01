@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="layout.css"/>
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+	<div id="rFloater">
+		<div id="filters">
+			<input type="text" id="filterGoods"		placeholder="Merchandise" />
+			<input type="text" id="filterInfo"		placeholder="Details" />
+			<!-- <input type="text" id="filterBonuses"	placeholder="Bonuses (e.g. str +2 10, lore 30)" /> -->
+			<input type="text" id="filterQmin"		placeholder="Q min" /> 
+			<input type="text" id="filterQmax"		placeholder="Q max" />
+			<input type="text" id="filterLmin"		placeholder="Left min" />
+			<input type="text" id="filterLmax"		placeholder="Left max" />	
+			<div class="spacer"></div>
+			<input type="text" id="filterPrice"		placeholder="Price" />
+			<input type="text" id="filterPQmin"		placeholder="Price Q min" />
+			<input type="text" id="filterPQmax"		placeholder="Price Q max" />				
+			<input type="text" id="filterPAMTmin"	placeholder="Price min" />
+			<input type="text" id="filterPAMTmax"	placeholder="Price max" />
+			<div class="spacer"></div>
+			<div class="button_halfwide" id="btnSearch">Search</div>
+			<div class="button_halfwide" id="btnReset">Clear all</div>
+		</div>
+
+		<div id="mapContainer">
+			<svg id="mapSVG" 
+				xmlns="http://www.w3.org/2000/svg" 
+				xmlns:xlink="http://www.w3.org/1999/xlink">
+			</svg>
+		</div>
+
+		<div id="lot">
+			<h1 id="lot-product">&nbsp;</h1>
+			<h4 id="lot-left">&nbsp;</h3>
+			<div id="lot-details">&nbsp;</div>
+			<h1 id="lot-price">&nbsp;</h1>
+			<h3 id="lot-extra">&nbsp;</h3>
+		</div>
+	</div>
+
+	<div id="data-headers">
+		<div id='sort-cn' class="hdr">Product</div>
+		<div id='sort-cq' class="hdr">Q</div>
+		<div id='sort-cl' class="hdr">STK</div>
+		<div id='sort-pn' class="hdr">Price</div>
+		<div id='sort-pq' class="hdr">Q</div>
+		<div id='sort-pa' class="hdr">AMT</div>
+	</div>
+	<div id="data-container">
+		<table id="dataTable">
+			<tbody></tbody>
+		</table>
+	</div>
+
+	<script type="text/javascript" src="settings.js"></script>
+	<script type="text/javascript" src="utils.js"></script>
+	<script type="text/javascript" src="map.js"></script>
+	<script type="text/javascript" src="rendertable.js"></script>
+</body>
+</html>

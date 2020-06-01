@@ -1,0 +1,97 @@
+/*
+#AAA - mono stroke
+#888 - mono tip
+
+#421 - fill
+#1C3B46 - stroke
+#1C3B46 - accent
+
+#000000 - even row BG
+#111 - main BG
+#2A373D - hili BG
+#A39F96 - main text
+#F5DBCE - hili text
+*/
+
+body {
+	background-color: #111;
+	color: #BBB;
+}
+
+body * {
+	color: #BBB;
+}
+
+#data-headers {
+	background-color: #000;
+}
+
+#data-headers .hdr:hover {
+	color: #FFF;
+}
+
+#dataTable tbody tr:nth-child(even) {
+	background-color:#000;
+}
+
+#dataTable tr:hover td {
+	background-color: #123;
+	color: #FFF;
+}
+
+.dropdownList {
+	background-color: #000 !important;
+	border: #888 1px solid !important;
+}
+
+.dropdownList div:hover {
+	background-color: #123;
+	color: #FFF !important;
+}
+
+#filters>* {
+	border-bottom: #888 1px solid;
+}
+
+#filters>*:focus {
+	border-bottom: #AAA 1px solid;
+}
+
+#filters input::-webkit-input-placeholder {
+	color: #888;
+}
+
+#filters input :-ms-input-placeholder {
+	color: #888;
+}
+
+#lot-details * {
+	color: #888;
+}
+
+#lot-details h4 {
+	color: #FFF;
+}
+
+#lot-price {
+	color: #FFF !important;
+}
+
+#mapContainer {
+	background: url("gfx/mapBGd.png") no-repeat;
+}
+
+	#mapSVG .SVGstand {
+		fill-opacity: 0.5;
+		fill: #BBB;
+	}
+
+	#mapSVG .SVGstandInactive {
+		fill-opacity: 0.25;
+		fill: #000;
+	}
+	
+	#mapSVG .SVGmarker {
+		fill: #FFF;
+		stroke: #000;
+	}
