@@ -1,10 +1,10 @@
 var resURL = "http://www.havenandhearth.com/mt/r/";
 var jsonURL = "https://doctortoboggan.github.io/northstar/marketdata.json";
 
-var modx = 3;
-var mody = 3;
-var offx = 115;
-var offy = -15;
+var modx = 2;
+var mody = 2;
+var offx = 150;
+var offy = 20;
 
 var aBonuses = {
 	"agi" : "Agility",
