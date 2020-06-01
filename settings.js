@@ -1,5 +1,5 @@
 var resURL = "http://www.havenandhearth.com/mt/r/";
-var jsonURL = "marketdata.json";
+var jsonURL = "https://doctortoboggan.github.io/northstar/marketdata.json";
 
 var modx = 3;
 var mody = 3;
